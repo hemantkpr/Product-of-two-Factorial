@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "4a7eb2e5-9fb0-40ee-a0dc-e20ac326a395",
+		"name": "calculate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8989/calculate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "postman-token",
+						"value": "1f1a993d-f3f6-538f-a809-8b2507d28938"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"a\" : 5,\n\t\"b\" : 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8989/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
